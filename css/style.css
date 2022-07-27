@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+ header{
+    height: 100px;
+    background-color:rgba(0, 128, 0, 0.274);
+}
+
+main{
+    height: 80vh;
+    background-color:lightgrey;
+    position: relative;
+}
+
+.container{
+ width: 80%;
+ height: 100%;
+ background-color: aqua;
+ position:relative;
+ top:-50px;
+ margin:auto;
+ display: flex;
+
+
+}
+.contatti{
+ height: 100%;
+ width:30%;
+ background-color: blueviolet;
+}
+.chat{
+   height: 100%;
+   width: 70%;
+   background-color: blue; 
+}
+
+.Tu{
+height:40px;
+width: 100%;
+border: 3px solid black;
+}
+img{
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.avatar{
+    width: 100%;
+    height: 100%;
+    border: 2px solid beige;
+}
+/*****classi comuni**************/
+.dflex{
+    display: flex;
+}
+.item-center{
+   align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+.notifica{
+    border: 2px solid white;
+    font-size: 20px;
+    
+   
+   
+}
+.icone{
+  background-color: antiquewhite;
+  border-radius: 50px;
+  width: 40px;
+  text-align: center;
+  line-height: 35px;
+
+  color: blue;
+}
