@@ -52,8 +52,9 @@
                           </span> 
                     </div>-->
                     <ul>
-                        <li v-for="contact in contacts">
-                            <img :src="contact.avatar" alt="">
+                        <li v-for="(contact,indice) in contacts">
+                            <img :src="contact.avatar_1" alt="">
+                          
                         </li>
                     </ul>
                     
