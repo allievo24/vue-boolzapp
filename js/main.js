@@ -4,7 +4,7 @@ var app = new Vue({
         contacts: [
             {
                 name: 'Michele',
-                avatar: 'avatar_1.jpg',
+                avatar: '_1',
                 visible: true,
                 messages: [
                     {
