@@ -52,7 +52,19 @@ img{
     width: 100%;
     height: 100%;
     border: 2px solid beige;
+
 }
+.js-contatti{
+    background-color: aqua;
+    height:calc( 100% / 8);
+    border:3px solid black ;
+    
+}
+
+
+
+
+
 /*****classi comuni**************/
 .dflex{
     display: flex;
@@ -60,8 +72,15 @@ img{
 .item-center{
    align-items: center;
 }
+.content-center{
+    justify-content: center;
+}
 .wrap{
     flex-wrap: wrap;
+}
+
+.pl{
+    padding-left:20px;
 }
 
 
@@ -88,4 +107,9 @@ img{
   line-height: 40px;
   text-align: center;
   color: blue;
+}
+
+
+.cerca{
+    background-color: aliceblue;
 }
