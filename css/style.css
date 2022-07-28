@@ -120,14 +120,16 @@ img{
     height:100%;
     width: 65%;
     background-image: url("../img/mine.jpg");
-    position: relative;
+    position:relative;
  }
 .invia{
  height:40px ; 
  background-color: aliceblue;
- position: relative;
- top: 80%;
+ position:absulute;
+ bottom:0px;
  left: 0px;
  font-size: large;
-
+}
+input{
+    width: 80%;
 }
