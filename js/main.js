@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
+        contattoAttivo :0,
         contacts: [
             {
                 name: 'Michele',
@@ -160,12 +161,13 @@ var app = new Vue({
                         date: '10/01/2020 15:51:00',
                         message: 'OK!!',
                         status: 'received'
-                    }
-                ],
+                    },
+                ]
+              
+               
             }
         ]
     }
-
 
 
 })

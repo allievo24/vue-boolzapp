@@ -68,14 +68,15 @@
                 </div>
 
 
-
+                <!--parte sinistra-->
                 <div class="chat">
                    
                     
                     <div class="dflex">
                         <div class="contatto dflex item-center">
-                           <img src="" alt="" />
-                           <span></span> 
+                        <img :src="'img/avatar' + contacts[contattoAttivo].avatar +'.jpg'" alt=".avatar" />
+                          <!-- <img :src="contacts[contattoAttivo]. + contact.avatar +'.jpg'" alt=".avatar" />-->
+                      <span>{{contacts[contattoAttivo].name}}</span> 
                         </div>
                         <div class="dflex item-center "> 
                         <i class="ri-search-line"></i>
@@ -83,18 +84,25 @@
                         <i class="ri-more-2-line"></i>
                         </div>
                     </div>
-                   
+                    <div class="Msinviati" v-for="(message,indice) in contacts[contattoAttivo].messages">
+                        <span>{{message.message}}</span>
+                        <span>{{message.date}}</span>
+                    </div>
+                    <div class="Msrecevuti">
+                        <span></span>
+                        
+                    </div>
+
+                    
+                   <!-- campo di invio-->
                     <div class="invia dflex item-center between">    
                             <i class="ri-emotion-normal-line"></i>
-                            <input type="text" placeholder="Scrivi messaggio"/> 
-                            <i class="ri-mic-line"></i>
+                            <input type="text" placeholder="Scrivi messaggio" v-model="nuovoMessaggio" @keyup.enter="inviaMessaggio">
+                            <div>
+                               <i class="ri-mic-line"></i> 
+                            </div>  
                     </div>
-                    <div class="left">
-
-                    </div>
-                   <div class="right"></div>
-                  
-
+                    
                 </div>
             
             
@@ -136,7 +144,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

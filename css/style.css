@@ -83,12 +83,20 @@ img{
 .between{
     justify-content: space-between;
 }
+/***************************************/
 
 
 
+.Msinviati{
+background-color: green;
+min-height: 50px;
 
+}
 
-
+.Msrecevuti{
+    background-color:aliceblue;
+    min-height: 50px;
+}
 
 
 
@@ -125,7 +133,8 @@ img{
 .invia{
  height:40px ; 
  background-color: aliceblue;
- position:absulute;
+ width: 100% ;
+ position:absolute;
  bottom:0px;
  left: 0px;
  font-size: large;
