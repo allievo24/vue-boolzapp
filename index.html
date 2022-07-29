@@ -84,10 +84,10 @@
                         <i class="ri-more-2-line"></i>
                         </div>
                     </div>
-                    <div :class="getclassMsg(message)" v-for="(message,indice) in contacts[contattoAttivo].messages" class="dflex item-center wrap">
-                        <span>{{message.message}}</span>
-                        <span>{{message.date}}</span>
-                    </div>
+                    <div :class="getclassMsg(message)" v-for="(message,indice) in contacts[contattoAttivo].messages">
+                        <div class="text">{{message.message}}</div>
+                        <div class="data">{{message.date}}</div>
+                    
                     
 
                     
