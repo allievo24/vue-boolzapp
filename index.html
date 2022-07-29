@@ -84,14 +84,11 @@
                         <i class="ri-more-2-line"></i>
                         </div>
                     </div>
-                    <div class="Msinviati" v-for="(message,indice) in contacts[contattoAttivo].messages">
+                    <div :class="getclassMsg(message)" v-for="(message,indice) in contacts[contattoAttivo].messages">
                         <span>{{message.message}}</span>
                         <span>{{message.date}}</span>
                     </div>
-                    <div class="Msrecevuti">
-                        <span></span>
-                        
-                    </div>
+                    
 
                     
                    <!-- campo di invio-->

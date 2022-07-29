@@ -163,11 +163,22 @@ var app = new Vue({
                         status: 'received'
                     },
                 ]
-              
+             
                
             }
         ]
+    },
+    methods:{
+        getclassMsg(message){
+            if(message.status == "sent"){
+                
+              return "Msinviati";
+            }else{
+                return "Msrecevuti";
+            }
+        }
     }
+
 
 
 })
