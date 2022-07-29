@@ -176,7 +176,12 @@ var app = new Vue({
             }else{
                 return "Msrecevuti";
             }
+        },
+        getcontattoAttivo(index){
+            this.contattoAttivo = index;
+
         }
+
     }
 
 

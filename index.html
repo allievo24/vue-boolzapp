@@ -47,7 +47,7 @@
                     </div>
                     <div class="js-contatti">
                           <ul>
-                        <li v-for ="(contact,indice) in contacts"class="dflex">
+                        <li v-for ="(contact,indice) in contacts"class="dflex" @click="getcontattoAttivo(indice)">
                             <img :src="'img/avatar' + contact.avatar +'.jpg'" alt="">
                             <div >
                                 <h4>{{contact.name}}</h4>
@@ -84,7 +84,7 @@
                         <i class="ri-more-2-line"></i>
                         </div>
                     </div>
-                    <div :class="getclassMsg(message)" v-for="(message,indice) in contacts[contattoAttivo].messages">
+                    <div :class="getclassMsg(message)" v-for="(message,indice) in contacts[contattoAttivo].messages" class="dflex item-center wrap">
                         <span>{{message.message}}</span>
                         <span>{{message.date}}</span>
                     </div>
